@@ -1,0 +1,52 @@
+.container  {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    border:2px dashed black;
+    margin:10px 10px;
+    border-radius: 10px;
+    padding:20px;
+    width: 100%;
+}
+
+
+/* list1 and list2 */
+.List{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-decoration: none;
+    width: 200px;
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.ListContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap:10px;
+}
+
+.Button{
+    margin: auto;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.Button:hover{
+    background-color: grey;
+    color:white;
+    border-radius: 10%;
+}
+
+.ButtonContainer{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
