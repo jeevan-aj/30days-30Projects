@@ -67,6 +67,9 @@ const Board2 = () => {
     setList2Data(filteredArray);
   }
   return (
+  
+
+    
     <div className={`${boardStyle.container}`}>
       <div className={`${boardStyle.ListContainer}`}>
        

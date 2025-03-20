@@ -1,7 +1,16 @@
+
+html, body {
+    overflow: visible !important;
+  }
+
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     flex-wrap: wrap;
     margin-top:50px;
+    height: 100%;
+    row-gap: 100px;
+    column-gap: 20px;
 }
+

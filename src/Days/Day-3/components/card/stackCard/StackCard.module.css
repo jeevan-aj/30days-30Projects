@@ -1,0 +1,22 @@
+.stackCardWrapper {
+  height: 500px;
+  overflow-y: auto !important;
+  width: 100%;
+  position: relative;
+}
+
+.stackCardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  height: 400vh;
+  width: 100%;
+  margin: auto;
+}
+
+
+.stackCardWrapper::-webkit-scrollbar{
+  display: none;
+} 

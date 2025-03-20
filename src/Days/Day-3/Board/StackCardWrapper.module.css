@@ -1,0 +1,28 @@
+.stackCardContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  border:2px dashed black;
+  margin:10px 10px;
+  border-radius: 10px;
+  padding:20px;
+}
+
+.stack-card-wrapper {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+}
+
+.stack-card-wrapper::-webkit-scrollbar {
+  width: 6px;
+}
+
+.stack-card-wrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.stack-card-wrapper::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
