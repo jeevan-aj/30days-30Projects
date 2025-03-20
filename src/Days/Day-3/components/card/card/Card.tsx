@@ -1,11 +1,9 @@
-
 import { useEffect, useRef } from "react";
 import style from "./Card.module.css";
 import gsap from "gsap";
 
 const Card = ({
   i,
-  color,
   targetScale,
   image,
   progress,
@@ -29,6 +27,8 @@ const Card = ({
       progress
     );
 
+    console.log(targetScale, progress, scaleFactor);
+
     gsap.to(cardRef.current, {
       scale: scaleFactor,
       duration: 0.5,
@@ -40,14 +40,14 @@ const Card = ({
     <div className={style.cardContainer}>
       <div
         ref={cardRef}
-        className={`card  w-[300px] h-[200px] md:w-[500px] md:h-[300px] lg:w-[900px] lg:h-[500px]  ${style.card}`}
-        style={{ backgroundColor: color, top: `calc( ${i * 35}px)` }}
+        className={`card ${style.card}`}
+        style={{ top: `calc( ${i * 35}px)` }}
       >
         <img
           src={image}
           alt="image"
-          style={{ width: "100%", height: "100%", borderRadius: "20px" }}
-          className="w-[300px] h-[200px] md:w-[500px] md:h-[300px] lg:w-[900px] lg:h-[500px] "
+          style={{ borderRadius: "20px" }}
+          className=" "
         />
       </div>
     </div>

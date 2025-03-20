@@ -3,6 +3,7 @@
   overflow-y: auto !important;
   width: 100%;
   position: relative;
+  background-color: green;
 }
 
 .stackCardContainer {
@@ -11,9 +12,10 @@
   align-items: center;
   justify-content: flex-start;
   position: relative;
-  height: 400vh;
+  height: 300vh;
   width: 100%;
   margin: auto;
+  
 }
 
 

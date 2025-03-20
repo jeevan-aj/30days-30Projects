@@ -1,5 +1,5 @@
 import StackCard from "../components/card/stackCard/StackCard";
-import style from './StackCardWrapper.module.css'
+import style from './StackCardContainer.module.css'
 
 const StackCardContainer = () => {
   return (

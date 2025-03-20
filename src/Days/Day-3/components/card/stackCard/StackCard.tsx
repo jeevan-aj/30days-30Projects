@@ -31,7 +31,7 @@ const StackCard = () => {
     <div className={`${style.stackCardWrapper}`}>
       <div className={`${style.stackCardContainer}`} ref={containerRef}>
         {cardsData?.map((cur: TCardsData, idx: number) => {
-          const targetScale = 1 - (cardsData.length - idx) * 0.025;
+          const targetScale = 1 - (cardsData.length-1 - idx) * 0.05;
           return (
             <Card
               key={idx}
