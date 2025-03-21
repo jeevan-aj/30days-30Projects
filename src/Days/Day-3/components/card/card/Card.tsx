@@ -27,8 +27,6 @@ const Card = ({
       progress
     );
 
-    console.log(targetScale, progress, scaleFactor);
-
     gsap.to(cardRef.current, {
       scale: scaleFactor,
       duration: 0.5,
@@ -36,12 +34,13 @@ const Card = ({
     });
   }, [progress, i]);
 
+
   return (
-    <div className={style.cardContainer}>
+    <div className={style.cardContainer} >
       <div
         ref={cardRef}
         className={`card ${style.card}`}
-        style={{ top: `calc( ${i * 35}px)` }}
+        style={{ backgroundColor:"co", top: `calc( ${i * 35}px)` }}
       >
         <img
           src={image}
